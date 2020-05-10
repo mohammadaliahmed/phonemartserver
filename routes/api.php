@@ -51,6 +51,16 @@ Route::group(['prefix' => 'like'], function () {
 
 
 });
+Route::group(['prefix' => 'admin'], function () {
+
+    Route::post('getRecentAds', 'AdminController@getRecentAds');
+    Route::post('approveAd', 'AdminController@approveAd');
+    Route::post('pendingAd', 'AdminController@pendingAd');
+    Route::post('rejectAd', 'AdminController@rejectAd');
+    Route::post('updateFcmKey', 'AdminController@updateFcmKey');
+
+
+});
 
 Route::post('getAllCities', 'CitiesController@getAllCities');
 Route::post('getAllArea', 'AreaController@getAllArea');

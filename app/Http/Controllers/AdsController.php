@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Admin;
 use App\Ads;
 use App\Banners;
 use App\Constants;
@@ -22,7 +23,7 @@ class AdsController extends Controller
             ], Response::HTTP_OK);
         } else {
             $milliseconds = round(microtime(true) * 1000);
-
+//
             $ad = new Ads();
             $ad->title = $request->title;
             $ad->description = $request->description;
@@ -36,8 +37,12 @@ class AdsController extends Controller
             $ad->status = 'pending';
 
             $ad->save();
+
+
+            $admin = DB::table('admin')->where('id', 1)->pluck('fcm_key')->first();
+
             return response()->json([
-                'code' => 200, 'message' => "false"
+                'admin_fcm_key' => $admin
                 ,
             ], Response::HTTP_OK);
         }
@@ -51,14 +56,14 @@ class AdsController extends Controller
                 'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
             ], Response::HTTP_OK);
         } else {
-            $banners=Banners::all();
+            $banners = Banners::all();
 
             $ads = DB::select('select id,title,price,time,images from ads where status="active" order by id desc ');
             $likes = DB::table('likes')
                 ->where('user_id', $request->userId)
                 ->get();
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads,'banners'=>$banners, 'likesList' => $likes->pluck('ad_id')
+                'code' => 200, 'message' => "false", 'ads' => $ads, 'banners' => $banners, 'likesList' => $likes->pluck('ad_id')
                 ,
             ], Response::HTTP_OK);
         }
@@ -74,7 +79,7 @@ class AdsController extends Controller
         } else {
             $milliseconds = round(microtime(true) * 1000);
 
-            $ads = DB::select('select id,title,price,time,images from ads where id in (SELECT ad_id from likes where user_id='.$request->userId.') order by id desc ');
+            $ads = DB::select('select id,title,price,time,images from ads where id in (SELECT ad_id from likes where user_id=' . $request->userId . ') order by id desc ');
             $likes = DB::table('likes')
                 ->where('user_id', $request->userId)
                 ->get();
