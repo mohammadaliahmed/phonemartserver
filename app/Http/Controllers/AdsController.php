@@ -246,6 +246,8 @@ class AdsController extends Controller
             $user = User::find($ad->user_id);
 
             $ad->user = $user;
+            $ad->views=$ad->views+1;
+            $ad->update();
             $likes = DB::table('likes')
                 ->where('user_id', $request->userId)
                 ->get();

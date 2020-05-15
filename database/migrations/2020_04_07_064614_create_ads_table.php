@@ -23,6 +23,7 @@ class CreateAdsTable extends Migration
             $table->bigInteger('time');
             $table->text('images');
             $table->string('city');
+            $table->integer('views')->nullable();
             $table->string('area');
             $table->string('status')->default('pending');
             $table->timestamps();
