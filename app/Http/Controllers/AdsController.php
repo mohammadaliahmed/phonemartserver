@@ -115,6 +115,27 @@ class AdsController extends Controller
         }
     }
 
+    public function browseAds(Request $request)
+    {
+
+        if ($request->api_username != Constants::$API_USERNAME || $request->api_password != Constants::$API_PASSOWRD) {
+            return response()->json([
+                'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
+            ], Response::HTTP_OK);
+        } else {
+
+            $ads = DB::select('select id,area,title,price,time,images from ads 
+                                      where status ="active" order by id desc limit 200');
+            $likes = DB::table('likes')
+                ->where('user_id', $request->userId)
+                ->get();
+            return response()->json([
+                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes->pluck('ad_id')
+                ,
+            ], Response::HTTP_OK);
+        }
+    }
+
     public function getUserAds(Request $request)
     {
 
@@ -243,7 +264,7 @@ class AdsController extends Controller
             ], Response::HTTP_OK);
         } else {
             $ad = Ads::find($request->id);
-            $ad->views=$ad->views+1;
+            $ad->views = $ad->views + 1;
             $ad->update();
             $user = User::find($ad->user_id);
 

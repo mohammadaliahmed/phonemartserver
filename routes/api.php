@@ -38,6 +38,7 @@ Route::group(['prefix' => 'ad'], function () {
     Route::post('getAdsInCategory', 'AdsController@getAdsInCategory');
     Route::post('getUserAds', 'AdsController@getUserAds');
     Route::post('getMyAds', 'AdsController@getMyAds');
+    Route::post('browseAds', 'AdsController@browseAds');
     Route::post('getMyPendingAds', 'AdsController@getMyPendingAds');
     Route::post('changeAdStatus', 'AdsController@changeAdStatus');
     Route::post('searchResults', 'AdsController@searchResults');
