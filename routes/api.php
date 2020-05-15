@@ -64,3 +64,5 @@ Route::group(['prefix' => 'admin'], function () {
 
 Route::post('getAllCities', 'CitiesController@getAllCities');
 Route::post('getAllArea', 'AreaController@getAllArea');
+Route::post('importData', 'AdsController@importData');
+
