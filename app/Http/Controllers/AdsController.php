@@ -59,12 +59,16 @@ class AdsController extends Controller
                 'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
             ], Response::HTTP_OK);
         } else {
+            $user=User::find($request->userId);
+            $user->fcmKey = $request->fcmKey;
+            $user->update();
             $banners = Banners::all();
 
-            $ads = DB::select('select id,area,title,price,time,images from ads where status="active" order by id desc ');
+            $ads = DB::select('select id,area,title,price,time,images from ads where status="active" order by id desc limit 200');
             $likes = DB::table('likes')
                 ->where('user_id', $request->userId)
                 ->get();
+
             return response()->json([
                 'code' => 200, 'message' => "false", 'ads' => $ads, 'banners' => $banners, 'likesList' => $likes->pluck('ad_id')
                 ,
@@ -82,7 +86,7 @@ class AdsController extends Controller
         } else {
             $milliseconds = round(microtime(true) * 1000);
 
-            $ads = DB::select('select id,area,title,price,time,images from ads where id in (SELECT ad_id from likes where user_id=' . $request->userId . ') order by id desc ');
+            $ads = DB::select('select id,area,title,price,time,images from ads where id in (SELECT ad_id from likes where user_id=' . $request->userId . ') order by id desc limit 200');
             $likes = DB::table('likes')
                 ->where('user_id', $request->userId)
                 ->get();
@@ -104,7 +108,7 @@ class AdsController extends Controller
 
             $ads = DB::select('select id,area,title,price,time,images from ads 
                                       where category = "' . $request->category . '"
-                                       AND status ="active" order by id desc');
+                                       AND status ="active" order by id desc limit 200');
             $likes = DB::table('likes')
                 ->where('user_id', $request->userId)
                 ->get();
@@ -148,7 +152,7 @@ class AdsController extends Controller
             $ads = DB::select('select id,area,title,price,time,images from ads
                                       where user_id = "' . $request->userId . '" 
                                        AND status ="active"
-                                       order by id desc');
+                                       order by id desc limit 200');
             $likes = DB::table('likes')
                 ->where('user_id', $request->userId)
                 ->get();
@@ -171,7 +175,7 @@ class AdsController extends Controller
             $ads = DB::select('SELECT id,area,title,status,price,time,images from ads 
                                       WHERE user_id = "' . $request->userId . '"
                                       AND (status ="active"  OR status="inactive")
-                                      ORDER BY id DESC');
+                                      ORDER BY id DESC limit 200');
 
             return response()->json([
                 'code' => 200, 'message' => "false", 'ads' => $ads
@@ -196,7 +200,7 @@ class AdsController extends Controller
             $ads = DB::select('SELECT id,area,title,status,price,time,images from ads 
                                       WHERE user_id = "' . $request->userId . '"
                                       AND (status ="active"  OR status="inactive")
-                                      ORDER BY id DESC');
+                                      ORDER BY id DESC limit 200');
 
             return response()->json([
                 'code' => 200, 'message' => "false", 'ads' => $ads
@@ -217,7 +221,7 @@ class AdsController extends Controller
             $ads = DB::select('SELECT id,area,status ,title,price,time,images from ads 
                                       WHERE user_id = "' . $request->userId . '"
                                       AND status ="pending"  
-                                      ORDER BY id DESC');
+                                      ORDER BY id DESC limit 200');
 
             return response()->json([
                 'code' => 200, 'message' => "false", 'ads' => $ads
@@ -244,7 +248,7 @@ class AdsController extends Controller
                                       And ( title like "%' . $request->search . '%"  
                                       Or description like "%' . $request->search . '%"   )
                                       
-                                      order by id desc');
+                                      order by id desc limit 200');
             $likes = DB::table('likes')
                 ->where('user_id', $request->userId)
                 ->get();
