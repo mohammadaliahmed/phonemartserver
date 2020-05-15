@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb19c4fa-e013-4ffb-847d-31a26c48a2af" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2020_04_07_064614_create_ads_table.php" afterPath="$PROJECT_DIR$/database/migrations/2020_04_07_064614_create_ads_table.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,21 +27,21 @@
       <file leaf-file-name="AdsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="253" column="0" lean-forward="true" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+            <state relative-caret-position="327">
+              <caret line="246" column="26" lean-forward="false" selection-start-line="246" selection-start-column="26" selection-end-line="246" selection-end-column="26" />
               <folding>
                 <element signature="e#40#54#0#PHP" expanded="true" />
-                <marker date="1589534093064" expanded="true" signature="1896:1982" ph="select id,ti... " />
-                <marker date="1589534093064" expanded="true" signature="1896:1983" ph="select id,ti... ads" />
-                <marker date="1589534093064" expanded="true" signature="1896:1985" ph="select id,ti... ads" />
-                <marker date="1589534093064" expanded="true" signature="2798:2897" ph="select id,ti... " />
-                <marker date="1589534093064" expanded="true" signature="2798:2939" ph="select id,ti... " />
-                <marker date="1589534093064" expanded="true" signature="3669:3878" ph="select id,ti... " />
-                <marker date="1589534093064" expanded="true" signature="4601:4846" ph="select id,ti... " />
-                <marker date="1589534093064" expanded="true" signature="5567:5841" ph="SELECT id,ti... " />
-                <marker date="1589534093064" expanded="true" signature="6529:6803" ph="SELECT id,ti... " />
-                <marker date="1589534093064" expanded="true" signature="7375:7629" ph="SELECT id,st... " />
-                <marker date="1589534093064" expanded="true" signature="8199:8882" ph="select id,de... " />
+                <marker date="1589536183739" expanded="true" signature="1896:1982" ph="select id,ti... " />
+                <marker date="1589536183739" expanded="true" signature="1896:1983" ph="select id,ti... ads" />
+                <marker date="1589536183739" expanded="true" signature="1896:1985" ph="select id,ti... ads" />
+                <marker date="1589536183739" expanded="true" signature="2798:2897" ph="select id,ti... " />
+                <marker date="1589536183739" expanded="true" signature="2798:2939" ph="select id,ti... " />
+                <marker date="1589536183739" expanded="true" signature="3669:3878" ph="select id,ti... " />
+                <marker date="1589536183739" expanded="true" signature="4601:4846" ph="select id,ti... " />
+                <marker date="1589536183739" expanded="true" signature="5567:5841" ph="SELECT id,ti... " />
+                <marker date="1589536183739" expanded="true" signature="6529:6803" ph="SELECT id,ti... " />
+                <marker date="1589536183739" expanded="true" signature="7375:7629" ph="SELECT id,st... " />
+                <marker date="1589536183739" expanded="true" signature="8199:8882" ph="select id,de... " />
               </folding>
             </state>
           </provider>
@@ -97,6 +95,7 @@
       <find>getAdsInCategory</find>
       <find>from ads</find>
       <find>getUserAds</find>
+      <find>viewad</find>
     </findStrings>
     <replaceStrings>
       <replace>=&gt; $likes-&gt;pluck('ad_id')</replace>
@@ -410,12 +409,12 @@
       <workItem from="1588863866283" duration="2041000" />
       <workItem from="1588949464452" duration="17871000" />
       <workItem from="1589348566431" duration="18000" />
-      <workItem from="1589533988532" duration="312000" />
+      <workItem from="1589533988532" duration="1731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52992000" />
+    <option name="totallyTimeSpent" value="54411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1380" height="735" extended-state="0" />
@@ -521,17 +520,17 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1589534093064" expanded="true" signature="1896:1982" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="1896:1983" ph="select id,ti... ads" />
-            <marker date="1589534093064" expanded="true" signature="1896:1985" ph="select id,ti... ads" />
-            <marker date="1589534093064" expanded="true" signature="2798:2897" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="2798:2939" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="3669:3878" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="4601:4846" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="5567:5841" ph="SELECT id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="6529:6803" ph="SELECT id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="7375:7629" ph="SELECT id,st... " />
-            <marker date="1589534093064" expanded="true" signature="8199:8882" ph="select id,de... " />
+            <marker date="1589536183739" expanded="true" signature="1896:1982" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="1896:1983" ph="select id,ti... ads" />
+            <marker date="1589536183739" expanded="true" signature="1896:1985" ph="select id,ti... ads" />
+            <marker date="1589536183739" expanded="true" signature="2798:2897" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="2798:2939" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="3669:3878" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="4601:4846" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="5567:5841" ph="SELECT id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="6529:6803" ph="SELECT id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="7375:7629" ph="SELECT id,st... " />
+            <marker date="1589536183739" expanded="true" signature="8199:8882" ph="select id,de... " />
           </folding>
         </state>
       </provider>
@@ -549,17 +548,17 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1589534093064" expanded="true" signature="1896:1982" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="1896:1983" ph="select id,ti... ads" />
-            <marker date="1589534093064" expanded="true" signature="1896:1985" ph="select id,ti... ads" />
-            <marker date="1589534093064" expanded="true" signature="2798:2897" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="2798:2939" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="3669:3878" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="4601:4846" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="5567:5841" ph="SELECT id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="6529:6803" ph="SELECT id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="7375:7629" ph="SELECT id,st... " />
-            <marker date="1589534093064" expanded="true" signature="8199:8882" ph="select id,de... " />
+            <marker date="1589536183739" expanded="true" signature="1896:1982" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="1896:1983" ph="select id,ti... ads" />
+            <marker date="1589536183739" expanded="true" signature="1896:1985" ph="select id,ti... ads" />
+            <marker date="1589536183739" expanded="true" signature="2798:2897" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="2798:2939" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="3669:3878" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="4601:4846" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="5567:5841" ph="SELECT id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="6529:6803" ph="SELECT id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="7375:7629" ph="SELECT id,st... " />
+            <marker date="1589536183739" expanded="true" signature="8199:8882" ph="select id,de... " />
           </folding>
         </state>
       </provider>
@@ -837,21 +836,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="253" column="0" lean-forward="true" selection-start-line="253" selection-start-column="0" selection-end-line="253" selection-end-column="0" />
+        <state relative-caret-position="327">
+          <caret line="246" column="26" lean-forward="false" selection-start-line="246" selection-start-column="26" selection-end-line="246" selection-end-column="26" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1589534093064" expanded="true" signature="1896:1982" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="1896:1983" ph="select id,ti... ads" />
-            <marker date="1589534093064" expanded="true" signature="1896:1985" ph="select id,ti... ads" />
-            <marker date="1589534093064" expanded="true" signature="2798:2897" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="2798:2939" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="3669:3878" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="4601:4846" ph="select id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="5567:5841" ph="SELECT id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="6529:6803" ph="SELECT id,ti... " />
-            <marker date="1589534093064" expanded="true" signature="7375:7629" ph="SELECT id,st... " />
-            <marker date="1589534093064" expanded="true" signature="8199:8882" ph="select id,de... " />
+            <marker date="1589536183739" expanded="true" signature="1896:1982" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="1896:1983" ph="select id,ti... ads" />
+            <marker date="1589536183739" expanded="true" signature="1896:1985" ph="select id,ti... ads" />
+            <marker date="1589536183739" expanded="true" signature="2798:2897" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="2798:2939" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="3669:3878" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="4601:4846" ph="select id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="5567:5841" ph="SELECT id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="6529:6803" ph="SELECT id,ti... " />
+            <marker date="1589536183739" expanded="true" signature="7375:7629" ph="SELECT id,st... " />
+            <marker date="1589536183739" expanded="true" signature="8199:8882" ph="select id,de... " />
           </folding>
         </state>
       </provider>

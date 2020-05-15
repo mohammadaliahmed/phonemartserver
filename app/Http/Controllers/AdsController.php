@@ -243,11 +243,12 @@ class AdsController extends Controller
             ], Response::HTTP_OK);
         } else {
             $ad = Ads::find($request->id);
+            $ad->views=$ad->views+1;
+            $ad->update();
             $user = User::find($ad->user_id);
 
             $ad->user = $user;
-            $ad->views=$ad->views+1;
-            $ad->update();
+
             $likes = DB::table('likes')
                 ->where('user_id', $request->userId)
                 ->get();
@@ -293,6 +294,7 @@ class AdsController extends Controller
             $ad->user_id = $user->id;
             $ad->time = $milliseconds;
             $ad->city = $request->city;
+            $ad->views = 0;
             $ad->area = $request->area;
             $ad->category = $request->category;
             $ad->images = $request->images;
