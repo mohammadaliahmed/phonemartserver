@@ -25,6 +25,7 @@ Route::group(['prefix' => 'user'], function () {
     Route::post('login', 'UserController@login');
     Route::post('updateProfilePicture', 'UserController@updateProfilePicture');
     Route::post('updateFcmKey', 'UserController@updateFcmKey');
+    Route::post('update', 'UserController@update');
     Route::post('searchUsers', 'UserController@searchUsers');
     Route::post('userProfile', 'UserController@userProfile');
     Route::post('updateProfile', 'UserController@updateProfile');

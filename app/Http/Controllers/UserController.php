@@ -82,6 +82,29 @@ class UserController extends Controller
         }
     }
 
+    public function update(Request $request)
+    {
+
+        if ($request->api_username != Constants::$API_USERNAME || $request->api_password != Constants::$API_PASSOWRD) {
+            return response()->json([
+                'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
+            ], Response::HTTP_FORBIDDEN);
+        } else {
+
+            $user = User::find($request->userId);
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->phone = $request->phone;
+            $user->city = $request->city;
+            $user->update();
+            return response()->json([
+                'code' => Response::HTTP_OK, 'message' => "false", 'user' => $user
+                ,
+            ], Response::HTTP_OK);
+
+        }
+    }
+
     public
     function updateFcmKey(Request $request)
     {

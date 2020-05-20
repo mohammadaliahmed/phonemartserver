@@ -17,4 +17,10 @@ class AreaController extends Controller
             ,
         ], Response::HTTP_OK);
     }
+
+    public function insertArea(Request $request)
+    {
+
+        
+    }
 }
