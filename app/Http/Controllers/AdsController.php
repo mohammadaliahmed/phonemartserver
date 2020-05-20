@@ -59,7 +59,7 @@ class AdsController extends Controller
                 'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
             ], Response::HTTP_OK);
         } else {
-            $user=User::find($request->userId);
+            $user = User::find($request->userId);
             $user->fcmKey = $request->fcmKey;
             $user->update();
             $banners = Banners::all();
@@ -245,6 +245,7 @@ class AdsController extends Controller
                                       And price > ' . $request->minPrice . ' 
                                       And price < ' . $request->maxPrice . ' 
                                        AND status ="active"
+                                       AND city =' . $request->city . '
                                       And ( title like "%' . $request->search . '%"  
                                       Or description like "%' . $request->search . '%"   )
                                       
