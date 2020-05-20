@@ -245,7 +245,7 @@ class AdsController extends Controller
                                       And price > ' . $request->minPrice . ' 
                                       And price < ' . $request->maxPrice . ' 
                                        AND status ="active"
-                                       AND city =' . $request->city . '
+                                       AND city like "'.$request->city.'"
                                       And ( title like "%' . $request->search . '%"  
                                       Or description like "%' . $request->search . '%"   )
                                       
