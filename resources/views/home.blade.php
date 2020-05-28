@@ -16,7 +16,6 @@
                            title="{{$category->category}}">
                             <div class="border">
                                 <img src="public/categories/{{$category->image}}" height="70" width="70">
-                                {{$category->category}}
                                 <p>
 
                             </div>
