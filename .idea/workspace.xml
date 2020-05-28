@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb19c4fa-e013-4ffb-847d-31a26c48a2af" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +14,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="17" column="105" lean-forward="true" selection-start-line="17" selection-start-column="105" selection-end-line="17" selection-end-column="105" />
+            <state relative-caret-position="452">
+              <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
               <folding>
                 <marker date="1590653966067" expanded="false" signature="1474:1480" ph=" " />
                 <marker date="1590653966067" expanded="false" signature="1481:1487" ph=" " />
@@ -28,11 +28,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="viewad.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/viewad.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="63" column="51" lean-forward="true" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="31" column="71" lean-forward="false" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -117,8 +127,8 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
         <option value="$PROJECT_DIR$/resources/views/userads.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewad.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
       </list>
     </option>
   </component>
@@ -274,7 +284,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/layouts/app.blade.php&#10;viewad&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/viewad.blade.php&#10;viewa&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/viewad.blade.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/routes/web.php&#10;home&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/home.blade.php&#10;app.cs&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/css/app.css&#10;app.c&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/css/app.css&#10;homeco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/HomeController.php&#10;app.&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/css/app.css&#10;adsc&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdsController.php&#10;css&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/css/bootstrap.min.css&#10;homec&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/HomeController.php&#10;app.b&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/layouts/app.blade.php&#10;welc&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/welcome.blade.php&#10;wel&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/vendor/symfony/http-kernel/Resources/welcome.html.php&#10;welco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/welcome.blade.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/routes/api.php&#10;userco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/UserController.php&#10;file&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/FileUploadController.php&#10;apps&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Providers/AppServiceProvider.php&#10;ad&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdminController.php&#10;adc&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdsController.php&#10;admi&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdminController.php&#10;areac&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AreaController.php&#10;regi&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/Auth/RegisterController.php&#10;hom&#9;null&#9;null&#10;adco&#9;null&#9;null&#10;appco&#9;null&#9;null&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/User.php&#10;adsco&#9;null&#9;null&#10;regis&#9;null&#9;null&#10;.e&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/.env&#10;.env&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/.env" />
+    <property name="SearchEverywhereHistoryKey" value="view&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/viewad.blade.php&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/layouts/app.blade.php&#10;viewad&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/viewad.blade.php&#10;viewa&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/viewad.blade.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/routes/web.php&#10;home&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/home.blade.php&#10;app.cs&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/css/app.css&#10;app.c&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/css/app.css&#10;homeco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/HomeController.php&#10;app.&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/css/app.css&#10;adsc&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdsController.php&#10;css&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/css/bootstrap.min.css&#10;homec&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/HomeController.php&#10;app.b&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/layouts/app.blade.php&#10;welc&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/welcome.blade.php&#10;wel&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/vendor/symfony/http-kernel/Resources/welcome.html.php&#10;welco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/welcome.blade.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/routes/api.php&#10;userco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/UserController.php&#10;file&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/FileUploadController.php&#10;apps&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Providers/AppServiceProvider.php&#10;ad&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdminController.php&#10;adc&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdsController.php&#10;admi&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdminController.php&#10;areac&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AreaController.php&#10;regi&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/Auth/RegisterController.php&#10;hom&#9;null&#9;null&#10;adco&#9;null&#9;null&#10;appco&#9;null&#9;null&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/User.php&#10;adsco&#9;null&#9;null&#10;regis&#9;null&#9;null&#10;.e&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/.env&#10;.env&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/.env" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
@@ -403,12 +413,12 @@
       <workItem from="1589533988532" duration="4061000" />
       <workItem from="1589689316959" duration="2920000" />
       <workItem from="1590039624716" duration="603000" />
-      <workItem from="1590389111571" duration="20786000" />
+      <workItem from="1590389111571" duration="20962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82188000" />
+    <option name="totallyTimeSpent" value="82364000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1380" height="735" extended-state="0" />
@@ -831,14 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/viewad.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="63" column="51" lean-forward="true" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -871,23 +873,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="17" column="105" lean-forward="true" selection-start-line="17" selection-start-column="105" selection-end-line="17" selection-end-column="105" />
+        <state relative-caret-position="452">
+          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding>
             <marker date="1590653966067" expanded="false" signature="1474:1480" ph=" " />
             <marker date="1590653966067" expanded="false" signature="1481:1487" ph=" " />
             <marker date="1590653966067" expanded="false" signature="1487:1493" ph=" " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/viewad.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="51" lean-forward="true" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="71" lean-forward="false" selection-start-line="31" selection-start-column="71" selection-end-line="31" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
