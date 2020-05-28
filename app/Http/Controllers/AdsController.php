@@ -256,6 +256,7 @@ class AdsController extends Controller
             return response()->json([
                 'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes->pluck('ad_id')
                 ,
+                
             ], Response::HTTP_OK);
         }
     }
