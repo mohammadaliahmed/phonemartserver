@@ -6,6 +6,7 @@ use App\Admin;
 use App\Ads;
 use App\Banners;
 use App\Constants;
+use App\Likes;
 use App\User;
 use function count;
 use Illuminate\Http\Request;
@@ -59,18 +60,23 @@ class AdsController extends Controller
                 'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
             ], Response::HTTP_OK);
         } else {
-            $user = User::find($request->userId);
-            $user->fcmKey = $request->fcmKey;
-            $user->update();
+            $likes = [];
+            if ($request->has("userId")) {
+
+                $user = User::find($request->userId);
+                $user->fcmKey = $request->fcmKey;
+                $user->update();
+                $likes = DB::table('likes')
+                    ->where('user_id', $request->userId)
+                    ->get()->pluck('ad_id');
+            }
             $banners = Banners::all();
 
             $ads = DB::select('select id,area,title,price,time,images from ads where status="active" order by id desc limit 200');
-            $likes = DB::table('likes')
-                ->where('user_id', $request->userId)
-                ->get();
+
 
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'banners' => $banners, 'likesList' => $likes->pluck('ad_id')
+                'code' => 200, 'message' => "false", 'ads' => $ads, 'banners' => $banners, 'likesList' => $likes
                 ,
             ], Response::HTTP_OK);
         }
@@ -109,11 +115,15 @@ class AdsController extends Controller
             $ads = DB::select('select id,area,title,price,time,images from ads 
                                       where category = "' . $request->category . '"
                                        AND status ="active" order by id desc limit 200');
-            $likes = DB::table('likes')
-                ->where('user_id', $request->userId)
-                ->get();
+            $likes = [];
+            if ($request->has("userId")) {
+                $likes = DB::table('likes')
+                    ->where('user_id', $request->userId)
+                    ->get()->pluck('ad_id');
+            }
+
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes->pluck('ad_id')
+                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes
                 ,
             ], Response::HTTP_OK);
         }
@@ -130,11 +140,15 @@ class AdsController extends Controller
 
             $ads = DB::select('select id,area,title,price,time,images from ads 
                                       where status ="active" order by id desc limit 200');
-            $likes = DB::table('likes')
-                ->where('user_id', $request->userId)
-                ->get();
+            $likes = [];
+            if ($request->has("userId")) {
+                $likes = DB::table('likes')
+                    ->where('user_id', $request->userId)
+                    ->get()->pluck('ad_id');
+            }
+
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes->pluck('ad_id')
+                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes
                 ,
             ], Response::HTTP_OK);
         }
@@ -245,18 +259,21 @@ class AdsController extends Controller
                                       And price > ' . $request->minPrice . ' 
                                       And price < ' . $request->maxPrice . ' 
                                        AND status ="active"
-                                       AND city like "'.$request->city.'"
+                                       AND city like "' . $request->city . '"
                                       And ( title like "%' . $request->search . '%"  
                                       Or description like "%' . $request->search . '%"   )
                                       
                                       order by id desc limit 200');
-            $likes = DB::table('likes')
-                ->where('user_id', $request->userId)
-                ->get();
+            $likes = [];
+            if ($request->has("userId")) {
+                $likes = DB::table('likes')
+                    ->where('user_id', $request->userId)
+                    ->get()->pluck('ad_id');
+            }
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes->pluck('ad_id')
+                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes
                 ,
-                
+
             ], Response::HTTP_OK);
         }
     }
@@ -275,13 +292,15 @@ class AdsController extends Controller
             $user = User::find($ad->user_id);
 
             $ad->user = $user;
-
-            $likes = DB::table('likes')
-                ->where('user_id', $request->userId)
-                ->get();
+            $likes = [];
+            if ($request->has("userId")) {
+                $likes = DB::table('likes')
+                    ->where('user_id', $request->userId)
+                    ->get()->pluck('ad_id');
+            }
 
             return response()->json([
-                'code' => 200, 'message' => "false", 'ad' => $ad, 'likesList' => $likes->pluck('ad_id')
+                'code' => 200, 'message' => "false", 'ad' => $ad, 'likesList' => $likes
                 ,
             ], Response::HTTP_OK);
         }

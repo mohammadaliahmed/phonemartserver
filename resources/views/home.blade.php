@@ -8,7 +8,7 @@
         </h2>
         <div class="row margin10border">
             @foreach ($categories as $category)
-                <div class="col-md-2">
+                <div class="col-xs-5 col-sm-4 col-md-2">
 
                     <center>
                         <a href="category/{{$category->category}}"
