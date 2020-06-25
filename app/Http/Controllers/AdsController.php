@@ -61,14 +61,29 @@ class AdsController extends Controller
             ], Response::HTTP_OK);
         } else {
             $likes = [];
+            $tempuser = null;
             if ($request->has("userId")) {
+                $milliseconds = round(microtime(true) * 1000);
 
                 $user = User::find($request->userId);
                 $user->fcmKey = $request->fcmKey;
+                $user->time = $milliseconds;
                 $user->update();
                 $likes = DB::table('likes')
                     ->where('user_id', $request->userId)
                     ->get()->pluck('ad_id');
+            } else if ($request->has("temp")) {
+                $milliseconds = round(microtime(true) * 1000);
+
+                $user = new User();
+                $user->name = $request->name;
+                $user->password = $request->name;
+                $user->phone = $request->name;
+                $user->city = $request->name;
+                $user->time = $milliseconds;
+                $user->save();
+                $tempuser = User::find($user->id);
+
             }
             $banners = Banners::all();
 
@@ -76,7 +91,7 @@ class AdsController extends Controller
 
 
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'banners' => $banners, 'likesList' => $likes
+                'code' => 200, 'message' => "false", 'ads' => $ads, 'banners' => $banners, 'likesList' => $likes, 'tempuser' => $tempuser
                 ,
             ], Response::HTTP_OK);
         }
@@ -319,10 +334,8 @@ class AdsController extends Controller
         if ($user == null) {
 
             $user = new User();
-            $abc = Hash::make($phone);
             $user->name = $request->name;
-            $user->email = $milliseconds . '@gmail.com';
-            $user->password = $abc;
+            $user->password = md5($request->phone);
             $user->phone = $request->phone;
             $user->city = $request->city;
             $user->save();
