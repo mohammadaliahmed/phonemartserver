@@ -38,6 +38,8 @@ class AdsController extends Controller
             $ad->area = $request->area;
             $ad->category = $request->category;
             $ad->images = $request->images;
+            $ad->latitude = $request->lat;
+            $ad->longitude = $request->lon;
             $ad->status = 'pending';
 
             $ad->save();
