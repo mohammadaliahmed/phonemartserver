@@ -327,23 +327,23 @@ class AdsController extends Controller
     {
 
 
-        $phone = $request->phone;
-
-        $user = DB::table('users')->where('phone', $phone)->get()->first();
-
+//        $phone = $request->phone;
+//
+//        $user = DB::table('users')->where('phone', $phone)->get()->first();
+//
         $milliseconds = round(microtime(true) * 1000);
+//
+//        if ($user == null) {
 
-        if ($user == null) {
+        $user = new User();
+        $user->name = $request->name;
+        $user->password = md5($milliseconds);
+        $user->phone = $milliseconds;
+        $user->time = $milliseconds;
+        $user->city = $request->city;
+        $user->save();
 
-            $user = new User();
-            $user->name = $request->name;
-            $user->password = md5($request->phone);
-            $user->phone = $request->phone;
-            $user->city = $request->city;
-            $user->save();
-
-        }
-        $milliseconds = round(microtime(true) * 1000);
+//        }
 
         $ad = DB::table('ads')->where('title', $request->title)->get()->first();
         if ($ad == null) {
