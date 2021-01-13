@@ -3,12 +3,14 @@
 
 @section('content')
     <div class="container">
+        <hr>
         <h2>
             Brands
         </h2>
+        <hr>
         <div class="row margin10border">
             @foreach ($categories as $category)
-                <div class="col-xs-5 col-sm-4 col-md-2">
+                <div class="col-3 col-lg-2">
 
                     <center>
                         <a href="category/{{$category->category}}"
@@ -31,18 +33,22 @@
         </div>
 
         <br>
+
+        <hr>
         <h2>
             New Ads
         </h2>
+        <hr>
+
         <div class="row">
 
             @foreach ($ads as $ad)
-                <div class="col-md-3">
+                <div class="col-6 col-lg-3">
                     <a href="viewad/{{$ad->id}}"
                        data-toggle="tooltip"
                        title="Show Details">
                         <div class="p-3 border bg-light">
-                            <img src="{{$ad->img}}" height="200" width="200">
+                            <img src="{{$ad->img}}" height="180" width="180">
                             <p>
                             <h3><b>Rs{{$ad->price}}</b></h3></p>
                             <p>{{$ad->title}}</p>

@@ -6,14 +6,14 @@
         <div class="row">
 
 
-            <div class="col-8 margin10border">
+            <div class="col-12 col-lg-8">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
                     <div class="carousel-inner">
 
 
                         <div class="carousel-item active">
-                            <div class="mydiv">
+                            <div class="border">
 
                                 <img class="d-block" width="100%" height="500"
                                      src="{{$images[0]}}"
@@ -22,7 +22,7 @@
                         </div>
                         @foreach ($images as $image)
                             <div class="carousel-item">
-                                <div class="mydiv">
+                                <div class="border">
                                     <img class="d-block" width="100%" height="500"
                                          src="{{$image}}"
                                          alt="Second slide">
@@ -43,8 +43,9 @@
 
                 </div>
             </div>
-            <div class="col-4 ">
-                <div class="col margin10border">
+            <div class="col-lg-4 col-6 ">
+
+                <div class="border  p-2">
                     <h3>
                         Rs {{$ad->price}}
                     </h3>
@@ -52,7 +53,8 @@
                     <p> {{$ad->area}}, {{$ad->city}} &emsp;&emsp;&emsp;{{$ad->time}}</p>
                 </div>
                 <br>
-                <div class="col margin10border">
+
+                <div class="border p-2">
                     <a href="/adsByUser/{{$ad->user_id}}">
                         <h4>
                             Ad By {{$user->name}}
@@ -67,7 +69,7 @@
                         <b> {{$user->phone}}</b></p>
                 </div>
                 <br>
-                <div class="col margin10border">
+                <div class="border p-2">
                     <h4>Details</h4>
                     Brand: {{$ad->category}}
                 </div>
@@ -90,7 +92,7 @@
 
 
             @foreach ($relatedAds as $relatedAd)
-                <div class="col-md-2">
+                <div class="col-lg-2 col-6">
                     <a href="{{$relatedAd->id}}"
                        data-toggle="tooltip"
                        title="Show Details">
