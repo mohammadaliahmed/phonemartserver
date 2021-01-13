@@ -10,7 +10,7 @@
         <hr>
         <div class="row margin10border">
             @foreach ($categories as $category)
-                <div class="col-3 col-lg-2">
+                <div class="col-4 col-lg-2">
 
                     <center>
                         <a href="category/{{$category->category}}"
@@ -47,23 +47,28 @@
                     <a href="viewad/{{$ad->id}}"
                        data-toggle="tooltip"
                        title="Show Details">
-                        <div class="p-3 border bg-light">
-                            <img src="{{$ad->img}}" height="180" width="180">
-                            <p>
-                            <h3><b>Rs{{$ad->price}}</b></h3></p>
-                            <p>{{$ad->title}}</p>
-                            {{--<span>{{$ad->city}}</span> &emsp; &emsp;&emsp; <span>  {{$ad->time}}</span>--}}
-                            <p style="font-size:11px">{{$ad->city}}&emsp; &emsp;&emsp; {{$ad->time}}</p>
+                        <div class="border bg-light">
+                            <center><img src="{{$ad->img}}" height="150" width="150"></center>
+                            <div class="p-2">
+                                <p>
 
-                        </div>
+                                    <b>Rs {{$ad->price}}</b>
+                                </p>
+                                <p>{{$ad->title}}</p>
+                                {{--<span>{{$ad->city}}</span> &emsp; &emsp;&emsp; <span>  {{$ad->time}}</span>--}}
+                                <p style="font-size:11px">{{$ad->city}}&emsp; &emsp;&emsp; {{$ad->time}}</p>
+                            </div>
+
+
                     </a>
-                    <br> <br>
-
                 </div>
-
-            @endforeach
+                <br> <br>
 
         </div>
+
+        @endforeach
+
+    </div>
 
 
     </div>

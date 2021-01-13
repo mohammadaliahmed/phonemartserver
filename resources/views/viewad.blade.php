@@ -96,14 +96,18 @@
                     <a href="{{$relatedAd->id}}"
                        data-toggle="tooltip"
                        title="Show Details">
-                        <div class="p-3 border bg-light">
-                            <img src="{{$relatedAd->img}}" height="100" width="100">
-                            <p>
-                                <b>Rs{{$relatedAd->price}}</b></p>
-                            <p>{{$relatedAd->title}}</p>
-                            <p style="font-size:11px">{{$relatedAd->city}}&emsp; &emsp;&emsp; {{$relatedAd->time}}</p>
+                        <div class="border bg-light">
+                            <center><img src="{{$relatedAd->img}}" height="150" width="150"></center>
+                            <div class="p-2">
+                                <p>
+                                    <b>Rs{{$relatedAd->price}}</b></p>
+                                <p>{{$relatedAd->title}}</p>
+                                <p style="font-size:11px">{{$relatedAd->city}}&emsp;
+                                    &emsp;&emsp; {{$relatedAd->time}}</p>
 
+                            </div>
                         </div>
+
                     </a>
                     <br> <br>
 
