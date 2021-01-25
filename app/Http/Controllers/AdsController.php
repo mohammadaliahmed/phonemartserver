@@ -275,7 +275,40 @@ class AdsController extends Controller
                                       where category like  "%' . $request->category . '%" 
                                       And price > ' . $request->minPrice . ' 
                                       And price < ' . $request->maxPrice . ' 
-                                       AND status ="active"
+                                       AND status ="active" 
+                                      And ( title like "%' . $request->search . '%"  
+                                      Or description like "%' . $request->search . '%"   )
+                                      
+                                      order by id desc limit 200');
+            $likes = [];
+            if ($request->has("userId")) {
+                $likes = DB::table('likes')
+                    ->where('user_id', $request->userId)
+                    ->get()->pluck('ad_id');
+            }
+            return response()->json([
+                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes
+                ,
+
+            ], Response::HTTP_OK);
+        }
+    }
+
+    public function filterResults(Request $request)
+    {
+
+        if ($request->api_username != Constants::$API_USERNAME || $request->api_password != Constants::$API_PASSOWRD) {
+            return response()->json([
+                'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
+            ], Response::HTTP_OK);
+        } else {
+
+            $ads = DB::select('select id,area,description,status,title,price,time,images
+                                      from ads 
+                                      where category like  "%' . $request->category . '%" 
+                                      And price > ' . $request->minPrice . ' 
+                                      And price < ' . $request->maxPrice . ' 
+                                       AND status ="active" 
                                        AND city like "' . $request->city . '"
                                       And ( title like "%' . $request->search . '%"  
                                       Or description like "%' . $request->search . '%"   )
