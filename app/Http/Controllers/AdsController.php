@@ -371,7 +371,7 @@ class AdsController extends Controller
         $user = new User();
         $user->name = $request->name;
         $user->password = md5($milliseconds);
-        $user->phone = $milliseconds;
+        $user->phone = $request->phone;
         $user->time = $milliseconds;
         $user->city = $request->city;
         $user->save();
