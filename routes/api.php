@@ -21,51 +21,57 @@ Route::post('uploadFile', 'FileUploadController@uploadFile');
 
 Route::group(['prefix' => 'user'], function () {
 
-    Route::post('register', 'UserController@register');
-    Route::post('login', 'UserController@login');
-    Route::post('updateProfilePicture', 'UserController@updateProfilePicture');
-    Route::post('updateFcmKey', 'UserController@updateFcmKey');
-    Route::post('update', 'UserController@update');
-    Route::post('searchUsers', 'UserController@searchUsers');
-    Route::post('userProfile', 'UserController@userProfile');
-    Route::post('updateProfile', 'UserController@updateProfile');
-    Route::post('sendMail', 'MailController@sendMail');
+    Route::post('register', [\App\Http\Controllers\UserController::class, 'register']);
+    Route::post('login', [\App\Http\Controllers\UserController::class, 'login']);
+    Route::post('updateProfilePicture', [\App\Http\Controllers\UserController::class, 'updateProfilePicture']);
+    Route::post('updateFcmKey', [\App\Http\Controllers\UserController::class, 'updateFcmKey']);
+    Route::post('update', [\App\Http\Controllers\UserController::class, 'update']);
+    Route::post('register', [\App\Http\Controllers\UserController::class, 'register']);
+    Route::post('searchUsers', [\App\Http\Controllers\UserController::class, 'searchUsers']);
+    Route::post('userProfile', [\App\Http\Controllers\UserController::class, 'userProfile']);
+
 });
 Route::group(['prefix' => 'ad'], function () {
 
-    Route::post('storeAd', 'AdsController@storeAd');
-    Route::post('listOfAds', 'AdsController@listOfAds');
-    Route::post('viewAd', 'AdsController@viewAd');
-    Route::post('getAdsInCategory', 'AdsController@getAdsInCategory');
-    Route::post('getUserAds', 'AdsController@getUserAds');
-    Route::post('getMyAds', 'AdsController@getMyAds');
-    Route::post('browseAds', 'AdsController@browseAds');
-    Route::post('getMyPendingAds', 'AdsController@getMyPendingAds');
-    Route::post('changeAdStatus', 'AdsController@changeAdStatus');
-    Route::post('searchResults', 'AdsController@searchResults');
-    Route::post('filterResults', 'AdsController@filterResults');
-    Route::post('getFavoriteListOfAds', 'AdsController@getFavoriteListOfAds');
+
+    Route::post('storeAd', [\App\Http\Controllers\AdsController::class, 'storeAd']);
+    Route::post('listOfAds', [\App\Http\Controllers\AdsController::class, 'listOfAds']);
+    Route::post('viewAd', [\App\Http\Controllers\AdsController::class, 'viewAd']);
+    Route::post('getAdsInCategory', [\App\Http\Controllers\AdsController::class, 'getAdsInCategory']);
+    Route::post('getUserAds', [\App\Http\Controllers\AdsController::class, 'getUserAds']);
+    Route::post('getMyAds', [\App\Http\Controllers\AdsController::class, 'getMyAds']);
+    Route::post('browseAds', [\App\Http\Controllers\AdsController::class, 'browseAds']);
+    Route::post('getMyPendingAds', [\App\Http\Controllers\AdsController::class, 'getMyPendingAds']);
+    Route::post('changeAdStatus', [\App\Http\Controllers\AdsController::class, 'changeAdStatus']);
+    Route::post('searchResults', [\App\Http\Controllers\AdsController::class, 'searchResults']);
+    Route::post('filterResults', [\App\Http\Controllers\AdsController::class, 'filterResults']);
+    Route::post('getFavoriteListOfAds', [\App\Http\Controllers\AdsController::class, 'getFavoriteListOfAds']);
 
 });
 Route::group(['prefix' => 'like'], function () {
 
-    Route::post('likeAd', 'LikesController@likeAd');
-    Route::post('unlikeAd', 'LikesController@unlikeAd');
+
+    Route::post('likeAd', [\App\Http\Controllers\LikesController::class, 'likeAd']);
+    Route::post('unlikeAd', [\App\Http\Controllers\LikesController::class, 'unlikeAd']);
+
 
 
 });
 Route::group(['prefix' => 'admin'], function () {
 
-    Route::post('getRecentAds', 'AdminController@getRecentAds');
-    Route::post('approveAd', 'AdminController@approveAd');
-    Route::post('pendingAd', 'AdminController@pendingAd');
-    Route::post('rejectAd', 'AdminController@rejectAd');
-    Route::post('updateFcmKey', 'AdminController@updateFcmKey');
+    Route::post('getRecentAds', [\App\Http\Controllers\AdminController::class, 'getRecentAds']);
+    Route::post('approveAd', [\App\Http\Controllers\AdminController::class, 'approveAd']);
+    Route::post('pendingAd', [\App\Http\Controllers\LikesController::class, 'pendingAd']);
+    Route::post('rejectAd', [\App\Http\Controllers\LikesController::class, 'rejectAd']);
+    Route::post('updateFcmKey', [\App\Http\Controllers\LikesController::class, 'updateFcmKey']);
 
 
 });
 
-Route::post('getAllCities', 'CitiesController@getAllCities');
-Route::post('getAllArea', 'AreaController@getAllArea');
-Route::post('importData', 'AdsController@importData');
+
+Route::post('getAllCities', [\App\Http\Controllers\CitiesController::class, 'getAllCities']);
+Route::post('getAllArea', [\App\Http\Controllers\AreaController::class, 'getAllArea']);
+Route::post('importData', [\App\Http\Controllers\AdsController::class, 'importData']);
+
+
 
