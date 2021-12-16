@@ -40,7 +40,7 @@ class AdminController extends Controller
         } else {
 
             $ad = Ads::find($request->id);
-            $ad->status = 'active';
+            $ad->status = $request->status;
             $ad->update();
             $fcmKey = DB::table('users')->where('id', $ad->user_id)->pluck('fcmKey')->first();
 
