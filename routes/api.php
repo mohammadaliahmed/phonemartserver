@@ -61,9 +61,9 @@ Route::group(['prefix' => 'admin'], function () {
 
     Route::post('getRecentAds', [\App\Http\Controllers\AdminController::class, 'getRecentAds']);
     Route::post('approveAd', [\App\Http\Controllers\AdminController::class, 'approveAd']);
-    Route::post('pendingAd', [\App\Http\Controllers\LikesController::class, 'pendingAd']);
-    Route::post('rejectAd', [\App\Http\Controllers\LikesController::class, 'rejectAd']);
-    Route::post('updateFcmKey', [\App\Http\Controllers\LikesController::class, 'updateFcmKey']);
+    Route::post('pendingAd', [\App\Http\Controllers\AdminController::class, 'pendingAd']);
+    Route::post('rejectAd', [\App\Http\Controllers\AdminController::class, 'rejectAd']);
+    Route::post('updateFcmKey', [\App\Http\Controllers\AdminController::class, 'updateFcmKey']);
 
 
 });
