@@ -62,7 +62,6 @@ class AdsController extends Controller
                 'code' => Response::HTTP_FORBIDDEN, 'message' => "Wrong api credentials"
             ], Response::HTTP_OK);
         } else {
-            $likes = [];
             $tempuser = null;
             if ($request->has("userId")) {
                 $milliseconds = round(microtime(true) * 1000);
@@ -71,9 +70,7 @@ class AdsController extends Controller
                 $user->fcmKey = $request->fcmKey;
                 $user->time = $milliseconds;
                 $user->update();
-                $likes = DB::table('likes')
-                    ->where('user_id', $request->userId)
-                    ->get()->pluck('ad_id');
+
             } else if ($request->has("temp")) {
                 $milliseconds = round(microtime(true) * 1000);
 
@@ -93,7 +90,7 @@ class AdsController extends Controller
 
 
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'banners' => $banners, 'likesList' => $likes, 'tempuser' => $tempuser
+                'code' => 200, 'message' => "false", 'ads' => $ads, 'banners' => $banners, 'tempuser' => $tempuser
                 ,
             ], Response::HTTP_OK);
         }
@@ -110,11 +107,9 @@ class AdsController extends Controller
             $milliseconds = round(microtime(true) * 1000);
 
             $ads = DB::select('select id,area,title,price,time,images from ads where id in (SELECT ad_id from likes where user_id=' . $request->userId . ') order by id desc limit 200');
-            $likes = DB::table('likes')
-                ->where('user_id', $request->userId)
-                ->get();
+
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes->pluck('ad_id')
+                'code' => 200, 'message' => "false", 'ads' => $ads
                 ,
             ], Response::HTTP_OK);
         }
@@ -132,15 +127,9 @@ class AdsController extends Controller
             $ads = DB::select('select id,area,title,price,time,images from ads 
                                       where category = "' . $request->category . '"
                                        AND status ="active" order by id desc limit 200');
-            $likes = [];
-            if ($request->has("userId")) {
-                $likes = DB::table('likes')
-                    ->where('user_id', $request->userId)
-                    ->get()->pluck('ad_id');
-            }
 
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes
+                'code' => 200, 'message' => "false", 'ads' => $ads
                 ,
             ], Response::HTTP_OK);
         }
@@ -157,15 +146,9 @@ class AdsController extends Controller
 
             $ads = DB::select('select id,area,title,price,time,images from ads 
                                       where status ="active" order by id desc limit 200');
-            $likes = [];
-            if ($request->has("userId")) {
-                $likes = DB::table('likes')
-                    ->where('user_id', $request->userId)
-                    ->get()->pluck('ad_id');
-            }
 
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes
+                'code' => 200, 'message' => "false", 'ads' => $ads
                 ,
             ], Response::HTTP_OK);
         }
@@ -184,11 +167,9 @@ class AdsController extends Controller
                                       where user_id = "' . $request->userId . '" 
                                        AND status ="active"
                                        order by id desc limit 200');
-            $likes = DB::table('likes')
-                ->where('user_id', $request->userId)
-                ->get();
+
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes->pluck('ad_id')
+                'code' => 200, 'message' => "false", 'ads' => $ads
                 ,
             ], Response::HTTP_OK);
         }
@@ -280,14 +261,9 @@ class AdsController extends Controller
                                       Or description like "%' . $request->search . '%"   )
                                       
                                       order by id desc limit 200');
-            $likes = [];
-            if ($request->has("userId")) {
-                $likes = DB::table('likes')
-                    ->where('user_id', $request->userId)
-                    ->get()->pluck('ad_id');
-            }
+
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes
+                'code' => 200, 'message' => "false", 'ads' => $ads
                 ,
 
             ], Response::HTTP_OK);
@@ -314,14 +290,9 @@ class AdsController extends Controller
                                       Or description like "%' . $request->search . '%"   )
                                       
                                       order by id desc limit 200');
-            $likes = [];
-            if ($request->has("userId")) {
-                $likes = DB::table('likes')
-                    ->where('user_id', $request->userId)
-                    ->get()->pluck('ad_id');
-            }
+
             return response()->json([
-                'code' => 200, 'message' => "false", 'ads' => $ads, 'likesList' => $likes
+                'code' => 200, 'message' => "false", 'ads' => $ads
                 ,
 
             ], Response::HTTP_OK);
@@ -342,15 +313,10 @@ class AdsController extends Controller
             $user = User::find($ad->user_id);
 
             $ad->user = $user;
-            $likes = [];
-            if ($request->has("userId")) {
-                $likes = DB::table('likes')
-                    ->where('user_id', $request->userId)
-                    ->get()->pluck('ad_id');
-            }
+
 
             return response()->json([
-                'code' => 200, 'message' => "false", 'ad' => $ad, 'likesList' => $likes
+                'code' => 200, 'message' => "false", 'ad' => $ad
                 ,
             ], Response::HTTP_OK);
         }
@@ -358,16 +324,7 @@ class AdsController extends Controller
 
     public function importData(Request $request)
     {
-
-
-//        $phone = $request->phone;
-//
-//        $user = DB::table('users')->where('phone', $phone)->get()->first();
-//
         $milliseconds = round(microtime(true) * 1000);
-//
-//        if ($user == null) {
-
         $user = new User();
         $user->name = $request->name;
         $user->password = md5($milliseconds);
@@ -376,11 +333,8 @@ class AdsController extends Controller
         $user->city = $request->city;
         $user->save();
 
-//        }
-
         $ad = DB::table('ads')->where('title', $request->title)->get()->first();
         if ($ad == null) {
-
             $ad = new Ads();
             $ad->title = $request->title;
             $ad->description = $request->description;

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fb19c4fa-e013-4ffb-847d-31a26c48a2af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/api.php" afterPath="$PROJECT_DIR$/routes/api.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +18,8 @@
       <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="663">
+              <caret line="40" column="80" lean-forward="false" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
               <folding>
                 <element signature="e#7#35#0#PHP" expanded="true" />
               </folding>
@@ -37,24 +37,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdsController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AdsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="80" column="45" lean-forward="false" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
+            <state relative-caret-position="427">
+              <caret line="159" column="7" lean-forward="false" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
               <folding>
                 <element signature="e#40#54#0#PHP" expanded="true" />
-                <marker date="1616822630425" expanded="true" signature="2967:3063" ph="select id,ar... " />
-                <marker date="1616822630425" expanded="true" signature="3771:3922" ph="select id,ar... " />
-                <marker date="1616822630425" expanded="true" signature="4651:4870" ph="select id,ar... " />
-                <marker date="1616822630425" expanded="true" signature="5687:5823" ph="select id,ar... " />
-                <marker date="1616822630425" expanded="true" signature="6641:6896" ph="select id,ar... " />
-                <marker date="1616822630425" expanded="true" signature="7617:7901" ph="SELECT id,ar... " />
-                <marker date="1616822630425" expanded="true" signature="8589:8873" ph="SELECT id,ar... " />
-                <marker date="1616822630425" expanded="true" signature="9445:9709" ph="SELECT id,ar... " />
-                <marker date="1616822630425" expanded="true" signature="10279:10973" ph="select id,ar... " />
-                <marker date="1616822630425" expanded="true" signature="11794:12566" ph="select id,ar... " />
+                <marker date="1647602961107" expanded="true" signature="2967:3063" ph="select id,ar... " />
+                <marker date="1647602961107" expanded="true" signature="3771:3922" ph="select id,ar... " />
+                <marker date="1647602961107" expanded="true" signature="4651:4870" ph="select id,ar... " />
+                <marker date="1647602961107" expanded="true" signature="5687:5823" ph="select id,ar... " />
+                <marker date="1647602961107" expanded="true" signature="6421:6676" ph="select id,ar... " />
+                <marker date="1647602961107" expanded="true" signature="7397:7681" ph="SELECT id,ar... " />
+                <marker date="1647602961107" expanded="true" signature="8369:8653" ph="SELECT id,ar... " />
+                <marker date="1647602961107" expanded="true" signature="9225:9489" ph="SELECT id,ar... " />
+                <marker date="1647602961107" expanded="true" signature="10059:10753" ph="select id,ar... " />
+                <marker date="1647602961107" expanded="true" signature="11574:12346" ph="select id,ar... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constants.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Constants.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -79,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            <state relative-caret-position="255">
+              <caret line="20" column="88" lean-forward="false" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
               <folding>
                 <marker date="1639633533235" expanded="true" signature="622:706" ph="select id,ti... " />
               </folding>
@@ -105,8 +125,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>-&gt;has</find>
-      <find>-&gt;has(</find>
       <find>getAdsInCategory</find>
       <find>view</find>
       <find>has</find>
@@ -135,6 +153,8 @@
       <find>rejectAd</find>
       <find>listOfAds</find>
       <find>admin</find>
+      <find>get</find>
+      <find>viewAd</find>
     </findStrings>
     <replaceStrings>
       <replace>=&gt; $likes-&gt;pluck('ad_id')</replace>
@@ -180,9 +200,9 @@
         <option value="$PROJECT_DIR$/resources/views/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/viewad.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/category.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" />
       </list>
     </option>
   </component>
@@ -219,8 +239,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -289,7 +309,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="AdminController&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/app/Http/Controllers/AdminController.php&#10;likescon&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/app/Http/Controllers/LikesController.php&#10;api&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/routes/api.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/routes/web.php&#10;adminc&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/app/Http/Controllers/AdminController.php&#10;adc&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/app/Http/Controllers/AdsController.php&#10;adsc&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/app/Http/Controllers/AdsController.php&#10;app.&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/css/app.css&#10;app.css&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/css/app.css&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/resources/views/layouts/app.blade.php&#10;.env&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/.env&#10;adscon&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdsController.php&#10;adco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdsController.php&#10;fileup&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/FileUploadController.php&#10;userc&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/UserController.php&#10;adsco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdsController.php&#10;file&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/FileUploadController.php&#10;uplo&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/FileUploadController.php&#10;usercon&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/UserController.php&#10;view&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/viewad.blade.php&#10;viewad&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/viewad.blade.php&#10;viewa&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/viewad.blade.php&#10;home&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/home.blade.php&#10;app.cs&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/css/app.css&#10;app.c&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/css/app.css&#10;homeco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/HomeController.php&#10;css&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/css/bootstrap.min.css&#10;homec&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/HomeController.php&#10;app.b&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/layouts/app.blade.php&#10;welc&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/welcome.blade.php&#10;wel&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/vendor/symfony/http-kernel/Resources/welcome.html.php&#10;welco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/welcome.blade.php&#10;userco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/UserController.php&#10;apps&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Providers/AppServiceProvider.php&#10;ad&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdminController.php&#10;admi&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdminController.php&#10;areac&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AreaController.php&#10;regi&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/Auth/RegisterController.php&#10;hom&#9;null&#9;null&#10;appco&#9;null&#9;null&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/User.php&#10;regis&#9;null&#9;null&#10;.e&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/.env" />
+    <property name="SearchEverywhereHistoryKey" value="api&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/routes/api.php&#10;AdminController&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/app/Http/Controllers/AdminController.php&#10;likescon&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/app/Http/Controllers/LikesController.php&#10;web&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/routes/web.php&#10;adminc&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/app/Http/Controllers/AdminController.php&#10;adc&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/app/Http/Controllers/AdsController.php&#10;adsc&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/app/Http/Controllers/AdsController.php&#10;app.&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/css/app.css&#10;app.css&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/css/app.css&#10;app&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/resources/views/layouts/app.blade.php&#10;.env&#9;FILE&#9;file://C:/xampp/htdocs/phonemartserver/.env&#10;adscon&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdsController.php&#10;adco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdsController.php&#10;fileup&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/FileUploadController.php&#10;userc&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/UserController.php&#10;adsco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdsController.php&#10;file&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/FileUploadController.php&#10;uplo&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/FileUploadController.php&#10;usercon&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/UserController.php&#10;view&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/viewad.blade.php&#10;viewad&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/viewad.blade.php&#10;viewa&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/viewad.blade.php&#10;home&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/home.blade.php&#10;app.cs&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/css/app.css&#10;app.c&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/css/app.css&#10;homeco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/HomeController.php&#10;css&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/css/bootstrap.min.css&#10;homec&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/HomeController.php&#10;app.b&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/layouts/app.blade.php&#10;welc&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/welcome.blade.php&#10;wel&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/vendor/symfony/http-kernel/Resources/welcome.html.php&#10;welco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/resources/views/welcome.blade.php&#10;userco&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/UserController.php&#10;apps&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Providers/AppServiceProvider.php&#10;ad&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdminController.php&#10;admi&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AdminController.php&#10;areac&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/AreaController.php&#10;regi&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/Http/Controllers/Auth/RegisterController.php&#10;hom&#9;null&#9;null&#10;appco&#9;null&#9;null&#10;user&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/app/User.php&#10;regis&#9;null&#9;null&#10;.e&#9;FILE&#9;file://C:/xampp/htdocs/mobilemart/.env" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -431,17 +451,24 @@
       <workItem from="1616821648118" duration="1611000" />
       <workItem from="1616843866204" duration="5583000" />
       <workItem from="1639629150810" duration="2876000" />
-      <workItem from="1642402701469" duration="112000" />
+      <workItem from="1642402701469" duration="763000" />
+      <workItem from="1642571282394" duration="393000" />
+      <workItem from="1643865367484" duration="2126000" />
+      <workItem from="1644661602733" duration="1811000" />
+      <workItem from="1644983771282" duration="2804000" />
+      <workItem from="1646716089011" duration="6000" />
+      <workItem from="1647600962774" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124513000" />
+    <option name="totallyTimeSpent" value="132902000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26439232" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2260128" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -449,7 +476,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32719395" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32719395" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -476,14 +503,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Constants.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,13 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -800,26 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="80" column="45" lean-forward="false" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1616822630425" expanded="true" signature="2967:3063" ph="select id,ar... " />
-            <marker date="1616822630425" expanded="true" signature="3771:3922" ph="select id,ar... " />
-            <marker date="1616822630425" expanded="true" signature="4651:4870" ph="select id,ar... " />
-            <marker date="1616822630425" expanded="true" signature="5687:5823" ph="select id,ar... " />
-            <marker date="1616822630425" expanded="true" signature="6641:6896" ph="select id,ar... " />
-            <marker date="1616822630425" expanded="true" signature="7617:7901" ph="SELECT id,ar... " />
-            <marker date="1616822630425" expanded="true" signature="8589:8873" ph="SELECT id,ar... " />
-            <marker date="1616822630425" expanded="true" signature="9445:9709" ph="SELECT id,ar... " />
-            <marker date="1616822630425" expanded="true" signature="10279:10973" ph="select id,ar... " />
-            <marker date="1616822630425" expanded="true" signature="11794:12566" ph="select id,ar... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LikesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -828,22 +820,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="88" lean-forward="false" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
+          <folding>
+            <marker date="1639633533235" expanded="true" signature="622:706" ph="select id,ti... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Constants.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="663">
+          <caret line="40" column="80" lean-forward="false" selection-start-line="40" selection-start-column="80" selection-end-line="40" selection-end-column="80" />
           <folding>
             <element signature="e#7#35#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdminController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="39" column="16" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="427">
+          <caret line="159" column="7" lean-forward="false" selection-start-line="159" selection-start-column="7" selection-end-line="159" selection-end-column="7" />
           <folding>
-            <marker date="1639633533235" expanded="true" signature="622:706" ph="select id,ti... " />
+            <element signature="e#40#54#0#PHP" expanded="true" />
+            <marker date="1647602961107" expanded="true" signature="2967:3063" ph="select id,ar... " />
+            <marker date="1647602961107" expanded="true" signature="3771:3922" ph="select id,ar... " />
+            <marker date="1647602961107" expanded="true" signature="4651:4870" ph="select id,ar... " />
+            <marker date="1647602961107" expanded="true" signature="5687:5823" ph="select id,ar... " />
+            <marker date="1647602961107" expanded="true" signature="6421:6676" ph="select id,ar... " />
+            <marker date="1647602961107" expanded="true" signature="7397:7681" ph="SELECT id,ar... " />
+            <marker date="1647602961107" expanded="true" signature="8369:8653" ph="SELECT id,ar... " />
+            <marker date="1647602961107" expanded="true" signature="9225:9489" ph="SELECT id,ar... " />
+            <marker date="1647602961107" expanded="true" signature="10059:10753" ph="select id,ar... " />
+            <marker date="1647602961107" expanded="true" signature="11574:12346" ph="select id,ar... " />
           </folding>
         </state>
       </provider>
