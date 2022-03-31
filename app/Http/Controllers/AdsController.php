@@ -86,7 +86,7 @@ class AdsController extends Controller
             }
             $banners = Banners::all();
 
-            $ads = DB::select('select id,area,title,price,time,images,featured from ads where status="active" order by id desc limit 200');
+            $ads = DB::select('select id,area,title,price,time,images,featured from ads where status="active" order by id desc limit 150');
 
 
             return response()->json([

@@ -17,21 +17,21 @@
       <file leaf-file-name="AdsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+            <state relative-caret-position="-4649">
+              <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="29" />
               <folding>
                 <element signature="e#40#54#0#PHP" expanded="true" />
-                <marker date="1647603293240" expanded="true" signature="2797:2893" ph="select id,ar... " />
-                <marker date="1647603293240" expanded="true" signature="3578:3729" ph="select id,ar... " />
-                <marker date="1647603293240" expanded="true" signature="4302:4521" ph="select id,ar... " />
-                <marker date="1647603293240" expanded="true" signature="5087:5223" ph="select id,ar... " />
-                <marker date="1647603293240" expanded="true" signature="5790:6045" ph="select id,ar... " />
-                <marker date="1647603293240" expanded="true" signature="6610:6894" ph="SELECT id,ar... " />
-                <marker date="1647603293240" expanded="true" signature="7582:7866" ph="SELECT id,ar... " />
-                <marker date="1647603293240" expanded="true" signature="8438:8702" ph="SELECT id,ar... " />
-                <marker date="1647603293240" expanded="true" signature="9272:9966" ph="select id,ar... " />
-                <marker date="1647603293240" expanded="true" signature="10537:11255" ph="select id,ar... " />
-                <marker date="1647603293240" expanded="true" signature="10537:11309" ph="select id,ar... " />
+                <marker date="1648704392952" expanded="true" signature="2797:2902" ph="select id,ar... " />
+                <marker date="1648704392952" expanded="true" signature="3587:3747" ph="select id,ar... " />
+                <marker date="1648704392952" expanded="true" signature="4320:4548" ph="select id,ar... " />
+                <marker date="1648704392952" expanded="true" signature="5114:5259" ph="select id,ar... " />
+                <marker date="1648704392952" expanded="true" signature="5826:6090" ph="select id,ar... " />
+                <marker date="1648704392952" expanded="true" signature="6655:6948" ph="SELECT id,ar... " />
+                <marker date="1648704392952" expanded="true" signature="7636:7929" ph="SELECT id,ar... " />
+                <marker date="1648704392952" expanded="true" signature="8501:8774" ph="SELECT id,ar... " />
+                <marker date="1648704392952" expanded="true" signature="9344:10047" ph="select id,ar... " />
+                <marker date="1648704392952" expanded="true" signature="10618:11345" ph="select id,ar... " />
+                <marker date="1648704392952" expanded="true" signature="10618:11399" ph="select id,ar... " />
               </folding>
             </state>
           </provider>
@@ -61,9 +61,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>has</find>
-      <find>[]</find>
-      <find>viewad</find>
       <find>$request-&gt;userId</find>
       <find>listofads</find>
       <find>pl</find>
@@ -85,12 +82,15 @@
       <find>chang</find>
       <find>pendingAd</find>
       <find>rejectAd</find>
-      <find>listOfAds</find>
       <find>admin</find>
       <find>get</find>
       <find>viewAd</find>
       <find>likes</find>
       <find>listoad</find>
+      <find>,featured</find>
+      <find>from ads</find>
+      <find>listofa</find>
+      <find>listOfAds</find>
     </findStrings>
     <replaceStrings>
       <replace>=&gt; $likes-&gt;pluck('ad_id')</replace>
@@ -138,8 +138,8 @@
         <option value="$PROJECT_DIR$/resources/views/category.blade.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/AdminController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2022_03_31_051453_alter_table_ads_add_featured_colum.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/AdsController.php" />
       </list>
     </option>
   </component>
@@ -396,12 +396,12 @@
       <workItem from="1646716089011" duration="6000" />
       <workItem from="1647600962774" duration="2166000" />
       <workItem from="1647878312229" duration="3865000" />
-      <workItem from="1648703621379" duration="680000" />
+      <workItem from="1648703621379" duration="927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139015000" />
+    <option name="totallyTimeSpent" value="139262000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -411,6 +411,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -423,7 +424,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -747,9 +747,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="20" column="88" lean-forward="false" selection-start-line="20" selection-start-column="88" selection-end-line="20" selection-end-column="88" />
-          <folding>
-            <marker date="1639633533235" expanded="true" signature="622:706" ph="select id,ti... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -796,21 +794,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/AdsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+        <state relative-caret-position="-4649">
+          <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="29" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
-            <marker date="1647603293240" expanded="true" signature="2797:2893" ph="select id,ar... " />
-            <marker date="1647603293240" expanded="true" signature="3578:3729" ph="select id,ar... " />
-            <marker date="1647603293240" expanded="true" signature="4302:4521" ph="select id,ar... " />
-            <marker date="1647603293240" expanded="true" signature="5087:5223" ph="select id,ar... " />
-            <marker date="1647603293240" expanded="true" signature="5790:6045" ph="select id,ar... " />
-            <marker date="1647603293240" expanded="true" signature="6610:6894" ph="SELECT id,ar... " />
-            <marker date="1647603293240" expanded="true" signature="7582:7866" ph="SELECT id,ar... " />
-            <marker date="1647603293240" expanded="true" signature="8438:8702" ph="SELECT id,ar... " />
-            <marker date="1647603293240" expanded="true" signature="9272:9966" ph="select id,ar... " />
-            <marker date="1647603293240" expanded="true" signature="10537:11255" ph="select id,ar... " />
-            <marker date="1647603293240" expanded="true" signature="10537:11309" ph="select id,ar... " />
+            <marker date="1648704392952" expanded="true" signature="2797:2902" ph="select id,ar... " />
+            <marker date="1648704392952" expanded="true" signature="3587:3747" ph="select id,ar... " />
+            <marker date="1648704392952" expanded="true" signature="4320:4548" ph="select id,ar... " />
+            <marker date="1648704392952" expanded="true" signature="5114:5259" ph="select id,ar... " />
+            <marker date="1648704392952" expanded="true" signature="5826:6090" ph="select id,ar... " />
+            <marker date="1648704392952" expanded="true" signature="6655:6948" ph="SELECT id,ar... " />
+            <marker date="1648704392952" expanded="true" signature="7636:7929" ph="SELECT id,ar... " />
+            <marker date="1648704392952" expanded="true" signature="8501:8774" ph="SELECT id,ar... " />
+            <marker date="1648704392952" expanded="true" signature="9344:10047" ph="select id,ar... " />
+            <marker date="1648704392952" expanded="true" signature="10618:11345" ph="select id,ar... " />
+            <marker date="1648704392952" expanded="true" signature="10618:11399" ph="select id,ar... " />
           </folding>
         </state>
       </provider>
