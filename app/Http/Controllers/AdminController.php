@@ -22,7 +22,7 @@ class AdminController extends Controller
             ], Response::HTTP_OK);
         } else {
 
-            $ads = DB::select('select id,title,area, price,time,images, status from ads  order by id desc limit 200');
+            $ads = DB::select('select id,title,area, price,time,images, status,featured from ads  order by id desc limit 200');
 
             return response()->json([
                 'code' => 200, 'message' => "false", 'ads' => $ads

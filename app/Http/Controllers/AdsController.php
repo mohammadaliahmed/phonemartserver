@@ -86,7 +86,7 @@ class AdsController extends Controller
             }
             $banners = Banners::all();
 
-            $ads = DB::select('select id,area,title,price,time,images from ads where status="active" order by id desc limit 200');
+            $ads = DB::select('select id,area,title,price,time,images,featured from ads where status="active" order by id desc limit 200');
 
 
             return response()->json([
@@ -106,7 +106,7 @@ class AdsController extends Controller
         } else {
             $milliseconds = round(microtime(true) * 1000);
 
-            $ads = DB::select('select id,area,title,price,time,images from ads where id in (SELECT ad_id from likes where user_id=' . $request->userId . ') order by id desc limit 200');
+            $ads = DB::select('select id,area,title,price,time,images,featured from ads where id in (SELECT ad_id from likes where user_id=' . $request->userId . ') order by id desc limit 200');
 
             return response()->json([
                 'code' => 200, 'message' => "false", 'ads' => $ads
@@ -124,7 +124,7 @@ class AdsController extends Controller
             ], Response::HTTP_OK);
         } else {
 
-            $ads = DB::select('select id,area,title,price,time,images from ads 
+            $ads = DB::select('select id,area,title,price,time,images,featured from ads 
                                       where category = "' . $request->category . '"
                                        AND status ="active" order by id desc limit 200');
 
@@ -144,7 +144,7 @@ class AdsController extends Controller
             ], Response::HTTP_OK);
         } else {
 
-            $ads = DB::select('select id,area,title,price,time,images from ads 
+            $ads = DB::select('select id,area,title,price,time,images,featured from ads 
                                       where status ="active" order by id desc limit 200');
 
             return response()->json([
@@ -163,7 +163,7 @@ class AdsController extends Controller
             ], Response::HTTP_OK);
         } else {
 
-            $ads = DB::select('select id,area,title,price,time,images from ads
+            $ads = DB::select('select id,area,title,price,time,images,featured from ads
                                       where user_id = "' . $request->userId . '" 
                                        AND status ="active"
                                        order by id desc limit 200');
@@ -184,7 +184,7 @@ class AdsController extends Controller
             ], Response::HTTP_OK);
         } else {
 
-            $ads = DB::select('SELECT id,area,title,status,price,time,images from ads 
+            $ads = DB::select('SELECT id,area,title,status,price,time,images,featured from ads 
                                       WHERE user_id = "' . $request->userId . '"
                                       AND (status ="active"  OR status="inactive")
                                       ORDER BY id DESC limit 200');
@@ -209,7 +209,7 @@ class AdsController extends Controller
             $ad->status = $request->status;
             $ad->update();
 
-            $ads = DB::select('SELECT id,area,title,status,price,time,images from ads 
+            $ads = DB::select('SELECT id,area,title,status,price,time,images,featured from ads 
                                       WHERE user_id = "' . $request->userId . '"
                                       AND (status ="active"  OR status="inactive")
                                       ORDER BY id DESC limit 200');
@@ -230,7 +230,7 @@ class AdsController extends Controller
             ], Response::HTTP_OK);
         } else {
 
-            $ads = DB::select('SELECT id,area,status ,title,price,time,images from ads 
+            $ads = DB::select('SELECT id,area,status ,title,price,time,images,featured from ads 
                                       WHERE user_id = "' . $request->userId . '"
                                       AND status ="pending"  
                                       ORDER BY id DESC limit 200');
@@ -251,7 +251,7 @@ class AdsController extends Controller
             ], Response::HTTP_OK);
         } else {
 
-            $ads = DB::select('select id,area,description,status,title,price,time,images
+            $ads = DB::select('select id,area,description,status,title,price,time,images,featured
                                       from ads 
                                       where category like  "%' . $request->category . '%" 
                                       And price > ' . $request->minPrice . ' 
@@ -279,7 +279,7 @@ class AdsController extends Controller
             ], Response::HTTP_OK);
         } else {
 
-            $ads = DB::select('select id,area,description,status,title,price,time,images
+            $ads = DB::select('select id,area,description,status,title,price,time,images,featured
                                       from ads 
                                       where category like  "%' . $request->category . '%" 
                                       And price > ' . $request->minPrice . ' 

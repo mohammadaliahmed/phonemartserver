@@ -32,7 +32,7 @@ class HomeController extends Controller
 
         $categories = DB::table('categories')->get();
 
-        $ads = DB::select('select id,city,title,price,time,images from ads where status="active" order by id desc limit 200');
+        $ads = DB::select('select id,city,title,price,time,images,featured from ads where status="active" order by id desc limit 200');
 
         foreach ($ads as $ad) {
             $img = explode(',', $ad->images);
@@ -65,7 +65,7 @@ class HomeController extends Controller
     {
 
 
-        $ads = DB::select('select id,city,title,price,time,images from ads where status="active" and category like "%' . $category . '%"  order by id desc limit 200');
+        $ads = DB::select('select id,city,title,price,time,images ,featuredfrom ads where status="active" and category like "%' . $category . '%"  order by id desc limit 200');
 
         foreach ($ads as $ad) {
             $img = explode(',', $ad->images);
@@ -97,7 +97,7 @@ class HomeController extends Controller
     {
 
 
-        $ads = DB::select('select id,city,title,price,time,images from ads where status="active" and user_id= ' . $id . '  order by id desc limit 200');
+        $ads = DB::select('select id,city,title,price,time,images,featured from ads where status="active" and user_id= ' . $id . '  order by id desc limit 200');
 
         foreach ($ads as $ad) {
             $img = explode(',', $ad->images);
